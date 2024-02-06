@@ -1,0 +1,162 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  /* height: 100vh;  */
+   /* background-color: #282D35;   */
+   /* display: flex;
+   flex-direction: column; */
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav{
+  display: flex;
+  align-items: center; 
+  /* background-color: #21222A; */
+  height: 90px;
+  padding: 30px 25px;
+}
+
+
+
+.nav-logo-text, .nav-title{
+  margin: 0;
+}
+
+.nav-logo-text{
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.nav-title{
+  color: #DEEBF8;
+  font-weight: 600;;
+}
+
+.nav-icon {
+  height: 30px;
+  margin-right: 7px;
+}
+
+.toggler{
+  display: flex;
+  align-items: center;
+}
+
+.toggler p{
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.toggler-light{
+  color:#2B283A;
+}
+
+nav.dark .toggler-light{
+  color:#918E9B;
+}
+.toggler--dark{
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark{
+  color:#FFFFFF;
+}
+
+.toggler-slider{
+  width:25px;
+  height:13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor:pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler-slider{
+  border-color: white;
+  background-color: #F5F5F5;
+  justify-content: flex-end;
+}
+
+.toggler-slider-circle{
+  height:13px;
+  width:13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler-slider-circle{
+  background-color: black;
+}
+
+
+nav.dark{
+  background-color:  #21222A;
+}
+
+
+
+/* main section */
+
+main{
+  /* background-color: #282D35; */
+  padding: 57px 27px;
+  /* color: white; */
+  background-image: url(public/components/images/react-icon-large.png);
+  background-repeat: no-repeat;
+  /* background-position-x: right;
+  background-position-y: 75%; */
+  background-position: right center;
+  flex: 1 1 auto;
+  background-color: white;
+  color: #2B283A;
+  
+}
+
+main.dark{
+  background-color: #282D35;
+  color:white;
+}
+
+
+
+.main-title{
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05rem;
+  
+  
+}
+
+.main-facts {
+  margin-top: 46px;
+  max-width: 400px;
+  
+}
+
+.main-facts > li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+  
+}
